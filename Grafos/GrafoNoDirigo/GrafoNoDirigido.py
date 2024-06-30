@@ -87,7 +87,7 @@ class GrafoNoDirigido:
     def DFS(self, start):
         self.desmarcarTodos()  # Desmarcar todos los vértices
         stack = [start]  # Inicializar la pila con el vértice de inicio
-        while stack:
+        while stack: #Verifica si la Pila no esta Vacia, si esta vacia el While se evalua como Falso
             current = stack.pop()  # Obtener el vértice actual de la pila
             if not self.isMarcado(current):  # Si el vértice no está marcado
                 self.marcar(current)  # Marcar el vértice como visitado

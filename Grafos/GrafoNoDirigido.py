@@ -8,14 +8,18 @@ class Grafo:
         for _ in range(nro_de_vertice_inicial):
             self.lista_de_adyacencia.append([])
 
+
     def insertar_vertice(self):
         self.lista_de_adyacencia.append([])
+
 
     def cantidad_de_aristas(self):
         return self.cant_aristas
 
+
     def cantidad_de_vertices(self):
         return len(self.lista_de_adyacencia)
+
 
     def validar_vertice(self, posicion_de_vertice):
         if posicion_de_vertice < 0 or posicion_de_vertice >= self.cantidad_de_vertices():
@@ -38,7 +42,6 @@ class Grafo:
         self.validar_vertice(pos_vertice_destino)
         adyacencia_del_origen = self.lista_de_adyacencia[pos_vertice_origen]
         return pos_vertice_destino in adyacencia_del_origen
-
 
 
     def mostrar_grafo_no_dirigido(self):
